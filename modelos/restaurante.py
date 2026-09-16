@@ -20,11 +20,8 @@ class Restaurante:
     def status(self):
         return 'Ativado✅' if self._status else 'Desativado❎'
 
-
-restaurante_ragazzo = Restaurante('Ragazzo', 'Fritos')
-restaurante_sujinho = Restaurante('Sujinho', 'Churrasco')
-
-Restaurante.listar_restaurantes()
+    def alternar_status(self):
+        self._status = not self._status
 
 
 
