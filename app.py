@@ -6,6 +6,10 @@ restaurante_outback = Restaurante('Outback', 'Australiano')
 
 restaurante_sujinho.alternar_status()
 
+restaurante_sujinho.receber_avaliacao(8, 'João')
+restaurante_sujinho.receber_avaliacao(4, 'Maria')
+restaurante_sujinho.receber_avaliacao(10, 'Pedro')
+
 def main():
     Restaurante.listar_restaurantes()
 
