@@ -1,4 +1,7 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.prato import Prato
+from modelos.cardapio.bebida import Bebida
+
 
 restaurante_ragazzo = Restaurante('Ragazzo', 'Fritos')
 restaurante_sujinho = Restaurante('Sujinho', 'Hamburguer')
@@ -6,12 +9,12 @@ restaurante_outback = Restaurante('Outback', 'Australiano')
 
 restaurante_sujinho.alternar_status()
 
-restaurante_sujinho.receber_avaliacao(8, 'João')
-restaurante_sujinho.receber_avaliacao(4, 'Maria')
-restaurante_sujinho.receber_avaliacao(10, 'Pedro')
+bebida1 = Bebida('Coca-Cola', 5.0, 'grande', 'Refrigerante de cola')
+prato1 = Prato('Hamburguer', 60.0, 'Hamburguer com queijo e bacon')
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida1)
+    print(prato1)
 
 if __name__ == '__main__':
     main()
